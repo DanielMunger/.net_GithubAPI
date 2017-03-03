@@ -176,4 +176,8 @@
 --resource:"c:\users\epicodus\documents\visual studio 2015\Projects\GithubApi\src\GithubApi\obj\Debug\netcoreapp1.0\GithubApidotnet-compile.deps.json",GithubApi.deps.json
 c:\users\epicodus\documents\visual studio 2015\Projects\GithubApi\src\GithubApi\Program.cs
 c:\users\epicodus\documents\visual studio 2015\Projects\GithubApi\src\GithubApi\Startup.cs
-c:\users\epicodus\documents\visual studio 2015\Projects\GithubApi\src\GithubApi\Controllers\HomeController.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\GithubApi\src\GithubApi\Controllers\AboutController.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\GithubApi\src\GithubApi\Controllers\LandingPageController.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\GithubApi\src\GithubApi\Controllers\ProjectsController.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\GithubApi\src\GithubApi\Models\GhApi.cs
+c:\users\epicodus\documents\visual studio 2015\Projects\GithubApi\src\GithubApi\Models\GithubObject.cs

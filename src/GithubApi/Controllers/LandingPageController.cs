@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
  
 namespace GithubApi.Controllers
 {
-    public class HomeController : Controller
+    public class LandingPageController : Controller
     {
      
         public IActionResult Index()

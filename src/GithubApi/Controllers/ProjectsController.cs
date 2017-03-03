@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+using GithubApi.Models;
+using static GithubApi.Models.GithubObject;
 
 namespace GithubApi.Controllers
 {
     public class ProjectsController : Controller
     {
-        // GET: /<controller>/
+        GhApi api = new GhApi();
         public IActionResult Index()
         {
+            //RootObject ghResponse =
+             api.CallGitHubAPI();
             return View();
         }
+       
     }
 }

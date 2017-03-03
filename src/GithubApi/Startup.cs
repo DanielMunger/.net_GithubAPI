@@ -41,7 +41,7 @@ namespace GithubApi
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=LandingPage}/{action=Index}/{id?}");
             });
 
             app.Run(async (context) =>
