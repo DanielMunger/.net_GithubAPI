@@ -1,0 +1,16 @@
+﻿.well {
+    color:#f2f7ff;
+   background-color: rgba(0, 0, 0, 0.5);
+   width: 800px;
+   margin-left: 100px;
+   font-family: serif;
+   border: none;
+   border-radius: 15px;
+   padding: 10px;
+    margin-top: 50px;
+}
+.about-img {
+    height: 700px;
+    width: 900px;
+    border-radius: 7px;
+}

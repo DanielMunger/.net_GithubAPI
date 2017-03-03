@@ -38,6 +38,7 @@ namespace GithubApi.Models
             RootObject[] jsonResponse = JsonConvert.DeserializeObject<RootObject[]>(response.Content);     
             return jsonResponse;
         }
+        
     }
 }
 

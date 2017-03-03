@@ -100,6 +100,6 @@ namespace GithubApi.Models
             public int watchers { get; set; }
             public string default_branch { get; set; }
         }
-
+      
     }
 }

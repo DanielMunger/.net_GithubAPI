@@ -23,6 +23,11 @@ namespace GithubApi.Controllers
             RootObject[] jsonObject = api.CallGitHubAPI();
             return Json(jsonObject);
         }
+        //[HttpGet]
+        //public IActionResult DetailsApi()
+        //{
+            //Future functionality
+        //}
        
     }
 }
