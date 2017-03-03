@@ -4,18 +4,17 @@
             url: "/Projects/CallGitHubAPI",
             type: "GET",
             success: function (result) {
-                $.each(result , function(index, b)
-                {
-                    console.log(b.name);
-                    $('#project-name').append('<h3>' + b.name + '</h3>');
-                }) 
+                $.each(result, function (index, repo) {
+                    $('#project-name').append('<div class="col m4"><div class="card">' + '<h4>' + repo.name + '</h4><ul><li><a href="https://www.github.com/' + repo.full_name + '">Github</a></li></ul>' +'<p>'+repo.description+'</p>' +'</div></div>');
+                    console.log("https://www.github.com/"+repo.full_name);
+                });
             }
-
         }).error(function(){alert("shit don't work yo");});
     });
 
 </script>
+<h2>Projects</h2>
 
-<div id="project-name">
+<div class="row" id="project-name">
     
-</div>
+</div><a></a>

@@ -2,13 +2,29 @@
 
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
     <div>
-        <h1>Layout file linked</h1>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper black">
+                    <a href="/" class="brand-logo">Daniel Munger's Portfolio</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="/Projects">Projects</a></li>
+                        <li><a href="/About">About Me</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
         @RenderBody()
     </div>
 </body>
