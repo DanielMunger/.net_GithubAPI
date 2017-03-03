@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using GithubApi.Models;
 using static GithubApi.Models.GithubObject;
+using Newtonsoft.Json.Linq;
 
 namespace GithubApi.Controllers
 {
@@ -13,9 +14,14 @@ namespace GithubApi.Controllers
         GhApi api = new GhApi();
         public IActionResult Index()
         {
-            //RootObject ghResponse =
-             api.CallGitHubAPI();
+            
             return View();
+        }
+        [HttpGet]
+        public IActionResult CallGithubAPI()
+        {
+            RootObject[] jsonObject = api.CallGitHubAPI();
+            return Json(jsonObject);
         }
        
     }

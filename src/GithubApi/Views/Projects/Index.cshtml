@@ -1,9 +1,21 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: "/Projects/CallGitHubAPI",
+            type: "GET",
+            success: function (result) {
+                $.each(result , function(index, b)
+                {
+                    console.log(b.name);
+                    $('#project-name').append('<h3>' + b.name + '</h3>');
+                }) 
+            }
 
+        }).error(function(){alert("shit don't work yo");});
+    });
 
+</script>
 
-https://api.github.com/users/DanielMunger/starred
+<div id="project-name">
+    
+</div>
