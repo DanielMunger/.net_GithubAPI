@@ -9,7 +9,8 @@ _{# A portfolio page with that uses an api call to github to retrieve repository
 
   * _Clone this program from my GitHub: https://github.com/DanielMunger/.net_GithubAPI
   * _Navigate into cloned project folder
-
+  * _Create a file called EnviornmentVariables in Models and store a clientid and client secret.
+  * _You can create client id and secret at https://github.com/settings/applications/new
   * _In Visual Studio launch IIS Express. 
   * _Follow website instructions_
 
