@@ -10,10 +10,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using static GithubApi.Models.GithubObject;
 
+
 namespace GithubApi.Models
 {
     public class GhApi
     {
+        public object EnviornmentVariable { get; private set; }
+
         public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
         {
             var tcs = new TaskCompletionSource<IRestResponse>();
@@ -26,7 +29,7 @@ namespace GithubApi.Models
         public RootObject[] CallGitHubAPI()
         {
             var client = new RestClient("https://api.github.com/");        
-            var request = new RestRequest("users/DanielMunger/starred?client_id=0bc0fefe2f144068a8c9&client_secret=b722a7949a1b214c2280a5c7fab51f3bc6b76021");
+            var request = new RestRequest("users/DanielMunger/starred?client_id="+ EnvironmentVariables.ClientId+"&client_secret="+ EnvironmentVariables.ClientSecret+"");
             request.AddHeader("User-Agent", "DanielMunger");
             var response = new RestResponse();
             Task.Run(async () =>
@@ -43,6 +46,4 @@ namespace GithubApi.Models
 }
 
                                                                                                                                                                           
-//0bc0fefe2f144068a8c9 clientid
 
-//b722a7949a1b214c2280a5c7fab51f3bc6b76021 client secret
